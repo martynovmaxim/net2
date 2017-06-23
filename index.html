@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>p2p echo</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+    <div>
+        <p>Id:</p>
+        <p id="peerId"></p>
+        <p>Generated number:</p>
+        <p id="number"></p>
+        <input type="text" id="requestedPeer" placeholder="Peer id">
+        <input type="button" onclick="connectTo()" value="connect">
+        <p id="status"></p>
+    </div>
+
+    <input type="button" onclick="minNum()" value="minNum">
+    <h1 id="result"></h1>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/peerjs/0.3.14/peer.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
